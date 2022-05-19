@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Phone Num DataBase</title>
+	</head>
+	<body>
+		<div style="padding-top:20px;">
+			<table border>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>PhoneNum</th>
+				</tr>
+				{% for item in items %}
+				<tr>
+					<td>{{ item.id }}</td>
+					<td>{{ item.name }}</td>
+					<td>{{ item.phone }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</body>
+</html>
+

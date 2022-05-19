@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>TEMP AND HUMI</title>
+	</head>
+	<body>
+		<div style="padding-top:20px;">
+			<table style="border-spacing:20px;">
+				<tr>
+					<th>TIME</th>
+					<th>TEMP</th>
+					<th>HUMI</th>
+				</tr>
+				{% for item in items %}
+				<tr>
+					<td>{{ item.time }}</td>
+					<td>{{ item.temp }}</td>
+					<td>{{ item.humi }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</body>
+</html>
